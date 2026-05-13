@@ -9,7 +9,7 @@ An automated, high-performance bootstrap script to transform a minimal Alpine Li
 - **Audio:** Modern Pipewire stack. Handles HDMI and Bluetooth audio out of the box. Using wireplumber, the system handles dynamic hardware events (like plugging in HDMI audio or Bluetooth headsets) without requiring a manual restart of the audio daemon. pipewire-pulse and alsa-plugins are included to provide a transparent bridge for legacy applications.
 - **Gaming:** Pre-configures Flatpak & Prism Launcher for Minecraft. This is the Flatpak based prism launcher bypassing the common glibc/musl compatibility issues. Most Linux games (including Minecraft) are compiled against glibc and are often distributed for x86_64 architectures. Flatpaks bundle their own glibc runtime, allowing software to run on a musl host without library conflicts. Prism Launcher: Specifically chosen for its ability to pull native aarch64 Java builds. This allows Minecraft to run with near-zero virtualization overhead on the ARM8v8 instruction set.
 
-## 🚀 Quick Start (Beginners)
+## 🚀 Quick Start
 
 1. **Flash:** Use Raspberry Pi Imager to flash **Alpine Linux (aarch64)** to your SD card.
 2. **Boot:** Power on your Pi 5 and log in as `root`.
@@ -23,3 +23,16 @@ An automated, high-performance bootstrap script to transform a minimal Alpine Li
    chmod +x install.sh
    ./install.sh
    ```
+
+
+Graphics Stack: mesa-dri-gallium, mesa-vulkan-broadcom, xf86-video-fbdev, mesa-v3d.
+
+Hardware & Utilities: eudev, dbus-x11, raspberrypi-utils, nvme-cli (new), lsblk (new).
+
+Desktop Environment: xfce4, xfce4-terminal, lightdm-gtk-greeter.
+
+Audio Stack: pipewire, pipewire-pulse, alsa-plugins-pulse.
+
+Theming & Fonts: adwaita-icon-theme, ttf-dejavu.
+
+Compatibility: flatpak (for Minecraft/Glibc support).
