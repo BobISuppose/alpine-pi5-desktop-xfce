@@ -18,7 +18,7 @@ An automated, high-performance bootstrap script to transform a minimal Alpine Li
 
    ```bash
    apk add git
-   git clone [https://github.com/BobISuppose/alpine-pi5-desktop.git](https://github.com/BobISuppose/alpine-pi5-desktop.git)
+   git clone https://github.com/BobISuppose/alpine-pi5-desktop.git
    cd alpine-pi5-desktop
    chmod +x install.sh
    ./install.sh
