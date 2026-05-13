@@ -1,7 +1,3 @@
-### **File 2: `install.sh`**
-###This is the "engine." I have added error handling and a "check" to make sure it's running on the correct architecture.
-
-```bash
 #!/bin/sh
 # Alpine Pi 5 Desktop Installer - 2026 Edition
 set -e
